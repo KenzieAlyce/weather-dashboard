@@ -1,0 +1,17 @@
+.float-left {
+    float:left
+}
+
+.sidebar-size {
+    height: 500px;
+    width: 500px;
+
+
+}
+
+.bottom-cards {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+background-color: blue;
+}
