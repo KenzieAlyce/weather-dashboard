@@ -17,8 +17,6 @@
 </head>
 
 
-
-
 <body>
 
     <!--- Navbar -->
@@ -40,8 +38,8 @@
     <div class="card blue-grey darken-1 sidebar-size">
       <div class="card-content white-text">
         <span class="card-title">Search for a city:</span>
-            <input class = "left" type = "text"> </input> 
-            <a class="waves-effect waves-light btn-small"><i class="smallmaterial-icons search"></i></i>button</a>
+            <input class = "left" type = "text" id = "citySearch"> </input> 
+            <a class="waves-effect waves-light btn-small" id ="button"><i class="smallmaterial-icons search"></i>button</a>
             
             
             <div class="collection">
@@ -72,12 +70,14 @@
           </div>
           <div class="card-stacked">
             <div class="card-content">
-              <h5 class="header">Wichita, KS 01/17/21</h5>
+              <h5 class="header"> <span id = "cityResult" ></span> 
+                <span id = "currentDate"></span></h5>
+
               <ul>
-                <li>Temperature: Awesome</li>
-                <li>Tornadoes: No, Thank You</li>
-                <li>Cloud conditions: Swirly</li>
-                <li> Thundersnow: Lightning Strikes</li>
+                <li>Temperature:<span id = "temp"> </span></li>
+              <li>Humidity: <span id = "humidity"> </span></li>
+                <li>Wind speed:<span id = "wind">  </span></li>
+                <li> UV Index: <span id = "uv"> </span></li>
               </ul>
               </div>
           </div>
@@ -90,16 +90,50 @@
       <!--5 small bottom cards-->
 
  <section class = "bottom-cards">
-<h5> 85</h5>
+<h5> <span id = "temp1"> </span></h5>
 <ul>
-  <li> Sunny</li>
+  <li><span></span></li>
 <li>Hurricane</li>
 </ul>
-
-
  </section>
-                
-                    
+           
+ <section class = "bottom-cards">
+  <h5><span id = "temp2"></span></h5>
+  <ul>
+    <li> Sunny</li>
+  <li>Hurricane</li>
+  </ul>
+   </section>
+           
+   
+   <section class = "bottom-cards">
+    <h5> 85</h5>
+    <ul>
+      <li> Sunny</li>
+    <li>Hurricane</li>
+    </ul>
+     </section>
+           
+     
+     <section class = "bottom-cards">
+      <h5> 85</h5>
+      <ul>
+        <li> Sunny</li>
+      <li>Hurricane</li>
+      </ul>
+       </section>
+           
+       
+       <section class = "bottom-cards">
+        <h5> 85</h5>
+        <ul>
+          <li> Sunny</li>
+        <li>Hurricane</li>
+        </ul>
+         </section>
+                   
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script type="javascript">
 
 </body>
 </html>
